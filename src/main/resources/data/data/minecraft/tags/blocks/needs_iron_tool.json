@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "tutorial:custom_block",
+    "tutorial:chargeable_block"
+  ]
+}

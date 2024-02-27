@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "tutorial:custom_item"
+    },
+    "T": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SSS",
+    " T ",
+    " T "
+  ],
+  "result": {
+    "item": "tutorial:custom_material_pickaxe"
+  }
+}
