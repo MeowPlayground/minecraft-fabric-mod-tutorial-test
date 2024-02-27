@@ -23,5 +23,7 @@
   "itemGroup.tutorial.test_group": "TEST ITEM GROUP",
   "block.tutorial.custom_block": "Custom Block",
   "block.tutorial.custom_block.onused": "you used custom block",
-  "block.tutorial.chargeable_block": "Chargeable Block"
+  "block.tutorial.chargeable_block": "Chargeable Block",
+  "block.tutorial.sound_block": "Sound Block",
+  "item.tutorial.tomato": "tomato"
 }

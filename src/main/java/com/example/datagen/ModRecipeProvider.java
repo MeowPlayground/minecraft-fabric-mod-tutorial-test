@@ -21,6 +21,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter exporter) {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, RegisterItems.CUSTOM_ITEM, RecipeCategory.DECORATIONS, RegisterBlocks.CHARGEABLE_BLOCK);
 
+        offer2x2CompactingRecipe(exporter, RecipeCategory.MISC, RegisterBlocks.SOUND_BLOCK, RegisterItems.CUSTOM_ITEM);
+
+        
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RegisterItems.CUSTOM_MATERIAL_PICKAXE, 1)
                 .pattern("SSS")
                 .pattern(" T ")
@@ -96,7 +99,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', RegisterItems.CUSTOM_ITEM)
                 .criterion(hasItem(RegisterItems.CUSTOM_ITEM), conditionsFromItem(RegisterItems.CUSTOM_ITEM))
                 .offerTo(exporter, new Identifier(getRecipeName(RegisterItems.CUSTOM_MATERIAL_BOOTS)));
-        
+
 
     }
 }

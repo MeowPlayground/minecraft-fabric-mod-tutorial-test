@@ -19,13 +19,14 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(RegisterBlocks.CUSTOM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(RegisterBlocks.SOUND_BLOCK);
         registerChargeableBlock(blockStateModelGenerator);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(RegisterItems.CUSTOM_ITEM, Models.GENERATED);
-
+        itemModelGenerator.register(RegisterItems.TOMATO, Models.GENERATED);
         itemModelGenerator.register(RegisterItems.CUSTOM_MATERIAL_AXE, Models.GENERATED);
         itemModelGenerator.register(RegisterItems.CUSTOM_MATERIAL_PICKAXE, Models.GENERATED);
         itemModelGenerator.register(RegisterItems.CUSTOM_MATERIAL_SHOVEL, Models.GENERATED);

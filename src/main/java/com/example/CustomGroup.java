@@ -28,6 +28,8 @@ public class CustomGroup {
                 entries.add(RegisterItems.CUSTOM_MATERIAL_SWORD);
                 entries.add(RegisterBlocks.CUSTOM_BLOCK);
                 entries.add(RegisterBlocks.CHARGEABLE_BLOCK);
+                entries.add(RegisterBlocks.SOUND_BLOCK);
+                entries.add(RegisterItems.TOMATO);
             }))
             .build();
 

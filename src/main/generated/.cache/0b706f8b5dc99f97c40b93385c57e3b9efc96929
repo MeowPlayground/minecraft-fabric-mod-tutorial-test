@@ -1,4 +1,5 @@
-// 1.20.4	2024-02-26T00:54:29.2546014	Template Mod/Model Definitions
+// 1.20.4	2024-02-28T00:15:57.0990326	Template Mod/Model Definitions
+c8399ab635b8555020bf6dbbeb46121b1cd2d175 assets\tutorial\blockstates\sound_block.json
 9168979b8bfd245a4ea119d492e02bcb03839a7e assets\tutorial\models\item\custom_material_shovel.json
 d956a9fc2c54bc9c590a73daefc562174fd3d57b assets\tutorial\models\item\chargeable_block.json
 114a1b3583e5ae4db8223f2006036b4a539cfdd2 assets\tutorial\models\item\custom_material_chestplate.json
@@ -11,8 +12,11 @@ aa0ee85b70eaff7fa1ac31501db06b3101637438 assets\tutorial\models\item\custom_mate
 eba27cd5a69550685d3486968c05c3315e28fbfa assets\tutorial\models\item\custom_material_boots.json
 ed4bb720fe00424cd5aaf191c096ff6e1ac2a9c3 assets\tutorial\models\item\custom_material_helmet.json
 2af2f2ce3e50bd162a1b3076343922a9c4d717c8 assets\tutorial\models\block\chargeable_block_charged.json
+655d436858595adbe175e355175bfa4ab596ce92 assets\tutorial\models\block\sound_block.json
 3631059a2318c60da22cb30cd10d40245261ba11 assets\tutorial\blockstates\custom_block.json
+9315cf3942ac15f93ea8696cd664e043a63ab07d assets\tutorial\models\item\tomato.json
 7094d68abdab569a31197755f22b4c64a85d3903 assets\tutorial\blockstates\chargeable_block.json
 afd2af956de4889dea04918eca6b7ca0f58b8cf9 assets\tutorial\models\item\custom_item.json
 c208e7bffadb0651dde8c6307da10aa7f20bb4b0 assets\tutorial\models\block\custom_block.json
 9f78cb98b1193552bac09c71a3516343d6820dc8 assets\tutorial\models\item\custom_material_pickaxe.json
+e017f2c421563603aae473e84935b12dd1f074ae assets\tutorial\models\item\sound_block.json

@@ -23,5 +23,7 @@
   "item.tutorial.custom_material_sword.tooltip": "这是泵比剑",
   "itemGroup.tutorial.test_group": "泵比世界",
   "block.tutorial.custom_block.onused": "你摸了泵比方块",
-  "block.tutorial.chargeable_block": "充能泵比方块"
+  "block.tutorial.chargeable_block": "充能泵比方块",
+  "block.tutorial.sound_block": "泵比声音块",
+  "item.tutorial.tomato": "泵比番茄"
 }
