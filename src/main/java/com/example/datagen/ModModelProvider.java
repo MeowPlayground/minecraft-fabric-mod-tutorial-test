@@ -1,10 +1,10 @@
 package com.example.datagen;
 
-import com.example.blocks.ModBlocks;
-import com.example.blocks.custom.ChargeableBlock;
-import com.example.blocks.custom.CornCropBlock;
-import com.example.blocks.custom.TomatoCropBlock;
-import com.example.items.ModItems;
+import com.example.block.ModBlocks;
+import com.example.block.custom.ChargeableBlock;
+import com.example.block.custom.CornCropBlock;
+import com.example.block.custom.TomatoCropBlock;
+import com.example.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;

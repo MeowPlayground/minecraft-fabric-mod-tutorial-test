@@ -1,7 +1,7 @@
-package com.example.items.materials;
+package com.example.item.materials;
 
 import com.example.TutorialMod;
-import com.example.items.ModItems;
+import com.example.item.ModItems;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;

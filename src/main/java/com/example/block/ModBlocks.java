@@ -1,10 +1,10 @@
-package com.example.blocks;
+package com.example.block;
 
 import com.example.TutorialMod;
-import com.example.blocks.custom.ChargeableBlock;
-import com.example.blocks.custom.CornCropBlock;
-import com.example.blocks.custom.SoundBlock;
-import com.example.blocks.custom.TomatoCropBlock;
+import com.example.block.custom.ChargeableBlock;
+import com.example.block.custom.CornCropBlock;
+import com.example.block.custom.SoundBlock;
+import com.example.block.custom.TomatoCropBlock;
 import com.example.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;

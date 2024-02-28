@@ -1,8 +1,8 @@
 package com.example;
 
-import com.example.blocks.ModBlocks;
+import com.example.block.ModBlocks;
 import com.example.enchantments.RegisterEnchantments;
-import com.example.items.ModItems;
+import com.example.item.ModItems;
 import com.example.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;

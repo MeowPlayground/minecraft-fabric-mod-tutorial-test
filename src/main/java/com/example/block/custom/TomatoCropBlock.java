@@ -1,7 +1,7 @@
-package com.example.blocks.custom;
+package com.example.block.custom;
 
 
-import com.example.items.ModItems;
+import com.example.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropBlock;

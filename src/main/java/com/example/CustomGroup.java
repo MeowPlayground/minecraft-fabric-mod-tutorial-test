@@ -1,7 +1,7 @@
 package com.example;
 
-import com.example.blocks.ModBlocks;
-import com.example.items.ModItems;
+import com.example.block.ModBlocks;
+import com.example.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;

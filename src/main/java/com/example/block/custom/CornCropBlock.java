@@ -1,6 +1,6 @@
-package com.example.blocks.custom;
+package com.example.block.custom;
 
-import com.example.items.ModItems;
+import com.example.item.ModItems;
 import net.minecraft.block.*;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.server.world.ServerWorld;

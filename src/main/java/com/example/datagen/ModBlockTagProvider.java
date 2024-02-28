@@ -1,6 +1,6 @@
 package com.example.datagen;
 
-import com.example.blocks.ModBlocks;
+import com.example.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;

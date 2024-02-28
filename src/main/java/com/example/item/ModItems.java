@@ -1,11 +1,11 @@
-package com.example.items;
+package com.example.item;
 
 import com.example.TutorialMod;
-import com.example.blocks.ModBlocks;
-import com.example.items.custom.CustomArmorItem;
-import com.example.items.custom.CustomFootComponents;
-import com.example.items.materials.CustomArmorMaterial;
-import com.example.items.materials.CustomToolMaterial;
+import com.example.block.ModBlocks;
+import com.example.item.custom.CustomArmorItem;
+import com.example.item.custom.CustomFootComponents;
+import com.example.item.materials.CustomArmorMaterial;
+import com.example.item.materials.CustomToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
