@@ -21,9 +21,11 @@
   "item.tutorial.corn_seeds": "Corn Seeds",
   "block.tutorial.dahlia": "DAHLIA",
   "sounds.tutorial.metal_detector_found_ore": "Metal Detector Jingle",
-  "sounds.tutorial.sound_block_break": "Sound Block Break",
-  "sounds.tutorial.sound_block_hit": "Sound Block Hit",
-  "sounds.tutorial.sound_block_place": "Sound Block Place",
-  "sounds.tutorial.sound_block_fall": "Custom Material fall",
-  "sounds.tutorial.sound_block_step": "Custom Material step"
+  "item.tutorial.music_disc_hno": "Hoshino-no-Otoshimono",
+  "item.tutorial.music_disc_hno.desc": "Hoshino-no-Otoshimono - AAAA",
+  "tutorial.sound_block_break": "Sound Block Break",
+  "tutorial.sound_block_place": "Sound Block Place",
+  "tutorial.sound_block_hit": "Sound Block Hit",
+  "tutorial.sound_block_fall": "Sound Block Fall",
+  "tutorial.sound_block_step": "Sound Block Step"
 }

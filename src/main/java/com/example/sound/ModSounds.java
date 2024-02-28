@@ -18,6 +18,7 @@ public class ModSounds {
     public static final BlockSoundGroup SOUND_BLOCK_SOUNDS = new BlockSoundGroup(1f, 1f,
             SOUND_BLOCK_BREAK, SOUND_BLOCK_STEP, SOUND_BLOCK_PLACE, SOUND_BLOCK_HIT, SOUND_BLOCK_FALL
     );
+    public static final SoundEvent MUSIC_HNO = registerSoundEvent("music_hno");
 
     public static SoundEvent registerSoundEvent(String name) {
         Identifier id = new Identifier(TutorialMod.MODID, name);

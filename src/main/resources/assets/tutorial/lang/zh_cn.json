@@ -21,9 +21,11 @@
   "item.tutorial.tomato_seeds": "泵比番茄种子",
   "itemGroup.tutorial.test_group": "泵比世界",
   "sounds.tutorial.metal_detector_found_ore": "Metal Detector Jingle",
-  "sounds.tutorial.sound_block_break": "Sound Block Break",
-  "sounds.tutorial.sound_block_fall": "Custom Material fall",
-  "sounds.tutorial.sound_block_hit": "Sound Block Hit",
-  "sounds.tutorial.sound_block_place": "Sound Block Place",
-  "sounds.tutorial.sound_block_step": "Custom Material step"
+  "item.tutorial.music_disc_hno": "《星降之物》",
+  "item.tutorial.music_disc_hno.desc": "《星降之物》 - AAAA",
+  "tutorial.sound_block_break": "泵比声音块 破坏",
+  "tutorial.sound_block_place": "泵比声音块 放置",
+  "tutorial.sound_block_hit": "泵比声音块 击打",
+  "tutorial.sound_block_fall": "泵比声音块 摔落",
+  "tutorial.sound_block_step": "泵比声音块 踩踏"
 }

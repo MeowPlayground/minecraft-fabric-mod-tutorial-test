@@ -1,4 +1,4 @@
-package com.example.enchantments;
+package com.example.enchantment;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;

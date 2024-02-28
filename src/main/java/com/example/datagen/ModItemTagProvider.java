@@ -24,5 +24,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                         ModItems.CUSTOM_MATERIAL_LEGGINGS,
                         ModItems.CUSTOM_MATERIAL_BOOTS
                 );
+        getOrCreateTagBuilder(ItemTags.MUSIC_DISCS).add(ModItems.MUSIC_DISC_HNO);
+        getOrCreateTagBuilder(ItemTags.CREEPER_DROP_MUSIC_DISCS).add(ModItems.MUSIC_DISC_HNO);
     }
 }

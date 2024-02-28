@@ -6,6 +6,7 @@ import com.example.item.custom.CustomArmorItem;
 import com.example.item.custom.CustomFootComponents;
 import com.example.item.materials.CustomArmorMaterial;
 import com.example.item.materials.CustomToolMaterial;
+import com.example.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -39,7 +40,8 @@ public class ModItems {
             new ArmorItem(CustomArmorMaterial.CUSTOM_ITEM, ArmorItem.Type.LEGGINGS, new Item.Settings()));
     public static final Item CUSTOM_MATERIAL_BOOTS = registerItem("custom_material_boots",
             new ArmorItem(CustomArmorMaterial.CUSTOM_ITEM, ArmorItem.Type.BOOTS, new Item.Settings()));
-
+    public static final Item MUSIC_DISC_HNO = registerItem("music_disc_hno",
+            new MusicDiscItem(7, ModSounds.MUSIC_HNO, new FabricItemSettings(), 139));
     //custom tool
     public static Item CUSTOM_MATERIAL_SHOVEL = registerItem("custom_material_shovel",
             new ShovelItem(CustomToolMaterial.CUSTOM_ITEM, 1.5F, -3.0F, new Item.Settings()));

@@ -1,7 +1,7 @@
 package com.example;
 
 import com.example.block.ModBlocks;
-import com.example.enchantments.RegisterEnchantments;
+import com.example.enchantment.RegisterEnchantments;
 import com.example.item.ModItems;
 import com.example.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
