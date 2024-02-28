@@ -1,6 +1,7 @@
 package com.example.items;
 
 import com.example.TutorialMod;
+import com.example.blocks.ModBlocks;
 import com.example.items.custom.CustomArmorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
@@ -10,10 +11,13 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class RegisterItems {
+public class ModItems {
 
     public static final Item CUSTOM_ITEM = registerItem("custom_item",
             new Item(new FabricItemSettings()));
+
+    public static final Item TOMATO_SEEDS = registerItem("tomato_seeds",
+            new AliasedBlockItem(ModBlocks.TOMATO_CROP, new FabricItemSettings()));
     public static final Item TOMATO = registerItem("tomato",
             new Item(new FabricItemSettings().food(CustomFootComponents.TOMATO)));
     //custom armor

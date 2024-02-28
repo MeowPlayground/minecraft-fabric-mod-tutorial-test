@@ -1,6 +1,6 @@
 package com.example.datagen;
 
-import com.example.items.RegisterItems;
+import com.example.items.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -19,10 +19,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(
-                        RegisterItems.CUSTOM_MATERIAL_HELMET,
-                        RegisterItems.CUSTOM_MATERIAL_CHESTPLATE,
-                        RegisterItems.CUSTOM_MATERIAL_LEGGINGS,
-                        RegisterItems.CUSTOM_MATERIAL_BOOTS
+                        ModItems.CUSTOM_MATERIAL_HELMET,
+                        ModItems.CUSTOM_MATERIAL_CHESTPLATE,
+                        ModItems.CUSTOM_MATERIAL_LEGGINGS,
+                        ModItems.CUSTOM_MATERIAL_BOOTS
                 );
     }
 }

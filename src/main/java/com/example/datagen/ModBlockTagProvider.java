@@ -1,6 +1,6 @@
 package com.example.datagen;
 
-import com.example.blocks.RegisterBlocks;
+import com.example.blocks.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -17,11 +17,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(RegisterBlocks.CUSTOM_BLOCK)
-                .add(RegisterBlocks.CHARGEABLE_BLOCK);
+                .add(ModBlocks.CUSTOM_BLOCK)
+                .add(ModBlocks.CHARGEABLE_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
-                .add(RegisterBlocks.CUSTOM_BLOCK);
+                .add(ModBlocks.CUSTOM_BLOCK);
 
     }
 }

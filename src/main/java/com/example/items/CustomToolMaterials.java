@@ -7,7 +7,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum CustomToolMaterials implements ToolMaterial {
-    CUSTOM_ITEM(MiningLevels.IRON, 500, 4f, 3f, 15, ()->Ingredient.ofItems(RegisterItems.CUSTOM_ITEM));
+    CUSTOM_ITEM(MiningLevels.IRON, 500, 4f, 3f, 15, () -> Ingredient.ofItems(ModItems.CUSTOM_ITEM));
 
     private final int miningLevel;
     private final int itemDurability;

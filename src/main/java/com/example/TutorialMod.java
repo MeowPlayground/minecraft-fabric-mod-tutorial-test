@@ -1,8 +1,8 @@
 package com.example;
 
-import com.example.blocks.RegisterBlocks;
+import com.example.blocks.ModBlocks;
 import com.example.enchantments.RegisterEnchantments;
-import com.example.items.RegisterItems;
+import com.example.items.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,8 +22,8 @@ public class TutorialMod implements ModInitializer {
         // However, some things (like resources) may still be uninitialized.
         // Proceed with mild caution.
         CustomGroup.register();
-        RegisterBlocks.register();
-        RegisterItems.register();
+        ModBlocks.register();
+        ModItems.register();
         RegisterEnchantments.register();
 
         LOGGER.info("Hello Fabric world!");

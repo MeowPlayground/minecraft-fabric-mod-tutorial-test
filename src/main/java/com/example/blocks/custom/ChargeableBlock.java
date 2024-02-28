@@ -1,4 +1,4 @@
-package com.example.blocks;
+package com.example.blocks.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

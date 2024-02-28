@@ -1,8 +1,9 @@
 package com.example.datagen;
 
-import com.example.blocks.ChargeableBlock;
-import com.example.blocks.RegisterBlocks;
-import com.example.items.RegisterItems;
+import com.example.blocks.ModBlocks;
+import com.example.blocks.custom.ChargeableBlock;
+import com.example.blocks.custom.TomatoCropBlock;
+import com.example.items.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
@@ -19,31 +20,33 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(RegisterBlocks.CUSTOM_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(RegisterBlocks.SOUND_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CUSTOM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUND_BLOCK);
         registerChargeableBlock(blockStateModelGenerator);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(RegisterItems.CUSTOM_ITEM, Models.GENERATED);
-        itemModelGenerator.register(RegisterItems.TOMATO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CUSTOM_ITEM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED);
 
-        itemModelGenerator.register(RegisterItems.CUSTOM_MATERIAL_AXE, Models.HANDHELD);
-        itemModelGenerator.register(RegisterItems.CUSTOM_MATERIAL_PICKAXE, Models.HANDHELD);
-        itemModelGenerator.register(RegisterItems.CUSTOM_MATERIAL_SHOVEL, Models.HANDHELD);
-        itemModelGenerator.register(RegisterItems.CUSTOM_MATERIAL_SWORD, Models.HANDHELD);
-        itemModelGenerator.register(RegisterItems.CUSTOM_MATERIAL_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CUSTOM_MATERIAL_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CUSTOM_MATERIAL_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CUSTOM_MATERIAL_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CUSTOM_MATERIAL_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CUSTOM_MATERIAL_HOE, Models.HANDHELD);
 
-        itemModelGenerator.registerArmor((ArmorItem) RegisterItems.CUSTOM_MATERIAL_HELMET);
-        itemModelGenerator.registerArmor((ArmorItem) RegisterItems.CUSTOM_MATERIAL_CHESTPLATE);
-        itemModelGenerator.registerArmor((ArmorItem) RegisterItems.CUSTOM_MATERIAL_LEGGINGS);
-        itemModelGenerator.registerArmor((ArmorItem) RegisterItems.CUSTOM_MATERIAL_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.CUSTOM_MATERIAL_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.CUSTOM_MATERIAL_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.CUSTOM_MATERIAL_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.CUSTOM_MATERIAL_BOOTS);
     }
 
     private void registerChargeableBlock(BlockStateModelGenerator blockStateModelGenerator) {
-        Identifier identifier = TexturedModel.CUBE_ALL.upload(RegisterBlocks.CHARGEABLE_BLOCK, blockStateModelGenerator.modelCollector);
-        Identifier identifier2 = blockStateModelGenerator.createSubModel(RegisterBlocks.CHARGEABLE_BLOCK, "_charged", Models.CUBE_ALL, TextureMap::all);
-        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(RegisterBlocks.CHARGEABLE_BLOCK).coordinate(createBooleanModelMap(ChargeableBlock.CHARGED, identifier2, identifier)));
+        Identifier identifier = TexturedModel.CUBE_ALL.upload(ModBlocks.CHARGEABLE_BLOCK, blockStateModelGenerator.modelCollector);
+        Identifier identifier2 = blockStateModelGenerator.createSubModel(ModBlocks.CHARGEABLE_BLOCK, "_charged", Models.CUBE_ALL, TextureMap::all);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.CHARGEABLE_BLOCK).coordinate(createBooleanModelMap(ChargeableBlock.CHARGED, identifier2, identifier)));
     }
 }
