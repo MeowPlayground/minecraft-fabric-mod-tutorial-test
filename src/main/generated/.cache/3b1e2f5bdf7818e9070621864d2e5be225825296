@@ -1,4 +1,4 @@
-// 1.20.4	2024-02-28T00:15:57.100035	Template Mod/Block Loot Tables
-6e211fda7ca97d6da8b83cb7d4742cbcf14c2e97 data\tutorial\loot_tables\blocks\chargeable_block.json
-0ae5faaaf557051af6a2d6325d6e20a871e6dcc3 data\tutorial\loot_tables\blocks\custom_block.json
-7f71b7f591b4361d448e800aec5e75a92f6dacf8 data\tutorial\loot_tables\blocks\sound_block.json
+// 1.20.4	2024-02-28T11:54:47.766321	Template Mod/Block Loot Tables
+6e211fda7ca97d6da8b83cb7d4742cbcf14c2e97 data/tutorial/loot_tables/blocks/chargeable_block.json
+0ae5faaaf557051af6a2d6325d6e20a871e6dcc3 data/tutorial/loot_tables/blocks/custom_block.json
+7f71b7f591b4361d448e800aec5e75a92f6dacf8 data/tutorial/loot_tables/blocks/sound_block.json

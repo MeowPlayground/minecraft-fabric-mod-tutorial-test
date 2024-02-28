@@ -14,7 +14,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class RegisterBlocks {
-    public static final String MODID = "tutorial";
     public static final Block CUSTOM_BLOCK = registerBlock("custom_block",
             new ExperienceDroppingBlock(
                     UniformIntProvider.create(2, 5),
@@ -28,11 +27,11 @@ public class RegisterBlocks {
 
     public static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, new Identifier(MODID, name), block);
+        return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MODID, name), block);
     }
 
     public static void registerBlockItem(String name, Block block) {
-        Registry.register(Registries.ITEM, new Identifier(MODID, name), new BlockItem(block, new FabricItemSettings()));
+        Registry.register(Registries.ITEM, new Identifier(TutorialMod.MODID, name), new BlockItem(block, new FabricItemSettings()));
     }
 
     public static void register() {

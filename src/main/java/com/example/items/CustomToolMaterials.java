@@ -1,38 +1,57 @@
 package com.example.items;
 
+import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class CustomToolMaterials implements ToolMaterial {
-    public static final CustomToolMaterials INSTANCE = new CustomToolMaterials();
+import java.util.function.Supplier;
+
+public enum CustomToolMaterials implements ToolMaterial {
+    CUSTOM_ITEM(MiningLevels.IRON, 500, 4f, 3f, 15, ()->Ingredient.ofItems(RegisterItems.CUSTOM_ITEM));
+
+    private final int miningLevel;
+    private final int itemDurability;
+    private final float miningSpeed;
+    private final float attackDamage;
+    private final int enchantability;
+    private final Supplier<Ingredient> repairIngredient;
+
+    CustomToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
+        this.miningLevel = miningLevel;
+        this.itemDurability = itemDurability;
+        this.miningSpeed = miningSpeed;
+        this.attackDamage = attackDamage;
+        this.enchantability = enchantability;
+        this.repairIngredient = repairIngredient;
+    }
 
     @Override
     public int getDurability() {
-        return 500;
+        return this.itemDurability;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 6.0F;
+        return this.miningSpeed;
     }
 
     @Override
     public float getAttackDamage() {
-        return 3.0F;
+        return this.attackDamage;
     }
 
     @Override
     public int getMiningLevel() {
-        return 3;
+        return this.miningLevel;
     }
 
     @Override
     public int getEnchantability() {
-        return 15;
+        return this.enchantability;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(RegisterItems.CUSTOM_ITEM);
+        return this.repairIngredient.get();
     }
 }

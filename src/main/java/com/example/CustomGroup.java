@@ -34,7 +34,7 @@ public class CustomGroup {
             .build();
 
     public static void register() {
-        Registry.register(Registries.ITEM_GROUP, new Identifier(RegisterItems.MODID, "test_group"), ITEM_GROUP);
+        Registry.register(Registries.ITEM_GROUP, new Identifier(TutorialMod.MODID, "test_group"), ITEM_GROUP);
     }
 }
 
