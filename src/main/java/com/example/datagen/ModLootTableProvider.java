@@ -28,6 +28,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.CHARGEABLE_BLOCK);
         addDrop(ModBlocks.SOUND_BLOCK);
+        addDrop(ModBlocks.DAHLIA);
+        addPottedPlantDrops(ModBlocks.POTTED_DAHLIA);
+        
         addDrop(ModBlocks.CUSTOM_BLOCK, copperOreLikeDrops(ModBlocks.CUSTOM_BLOCK, ModItems.CUSTOM_ITEM));
 
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition

@@ -1,5 +1,5 @@
 {
-  "block.tutorial.chargeable_block": "充能泵比方块",
+  "block.tutorial.chargeable_block": "泵比充能方块",
   "block.tutorial.custom_block": "泵比方块",
   "block.tutorial.sound_block": "泵比声音块",
   "enchantment.tutorial.frost": "泵比冰冻",
@@ -7,16 +7,17 @@
   "item.tutorial.corn_seeds": "泵比玉米种子",
   "item.tutorial.custom_item": "泵比",
   "item.tutorial.custom_item.tooltip": "这是泵比",
-  "item.tutorial.custom_material_axe": "泵比斧子",
-  "item.tutorial.custom_material_boots": "泵比靴子",
-  "item.tutorial.custom_material_chestplate": "泵比胸甲",
-  "item.tutorial.custom_material_helmet": "泵比头盔",
+  "item.tutorial.custom_material_axe": "泵比斧",
+  "item.tutorial.custom_material_boots": "泵比靴",
+  "item.tutorial.custom_material_chestplate": "泵比甲",
+  "item.tutorial.custom_material_helmet": "泵比头",
   "item.tutorial.custom_material_hoe": "泵比锄",
-  "item.tutorial.custom_material_leggings": "Custom Material Leggings",
+  "item.tutorial.custom_material_leggings": "泵比裤",
   "item.tutorial.custom_material_pickaxe": "泵比镐",
   "item.tutorial.custom_material_shovel": "泵比铲",
   "item.tutorial.custom_material_sword": "泵比剑",
   "item.tutorial.tomato": "泵比番茄",
   "item.tutorial.tomato_seeds": "泵比番茄种子",
-  "itemGroup.tutorial.test_group": "泵比世界"
+  "itemGroup.tutorial.test_group": "泵比世界",
+  "block.tutorial.dahlia": "泵比大力花"
 }

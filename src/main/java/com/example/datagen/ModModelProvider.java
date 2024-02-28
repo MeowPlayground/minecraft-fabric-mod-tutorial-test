@@ -27,6 +27,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5);
         blockStateModelGenerator.registerCrop(ModBlocks.CORN_CROP, CornCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7, 8);
+
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.DAHLIA, ModBlocks.POTTED_DAHLIA, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override
@@ -45,6 +47,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.CUSTOM_MATERIAL_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.CUSTOM_MATERIAL_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.CUSTOM_MATERIAL_BOOTS);
+
+
     }
 
     private void registerChargeableBlock(BlockStateModelGenerator blockStateModelGenerator) {

@@ -26,10 +26,11 @@ public class ModItems {
 
     public static final Item CORN_SEEDS = registerItem("corn_seeds",
             new AliasedBlockItem(ModBlocks.CORN_CROP, new FabricItemSettings()));
-    
+
     public static final Item CORN = registerItem("corn",
             new Item(new FabricItemSettings().food(CustomFootComponents.CORN)));
     //custom armor
+
     public static final Item CUSTOM_MATERIAL_HELMET = registerItem("custom_material_helmet",
             new CustomArmorItem(CustomArmorMaterial.CUSTOM_ITEM, ArmorItem.Type.HELMET, new Item.Settings()));
     public static final Item CUSTOM_MATERIAL_CHESTPLATE = registerItem("custom_material_chestplate",
