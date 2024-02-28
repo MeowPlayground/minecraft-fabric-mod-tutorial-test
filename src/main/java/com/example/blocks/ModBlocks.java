@@ -5,6 +5,7 @@ import com.example.blocks.custom.ChargeableBlock;
 import com.example.blocks.custom.CornCropBlock;
 import com.example.blocks.custom.SoundBlock;
 import com.example.blocks.custom.TomatoCropBlock;
+import com.example.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -26,7 +27,7 @@ public class ModBlocks {
             registerBlock("chargeable_block", new ChargeableBlock(FabricBlockSettings.copyOf(Blocks.STONE).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     public static final Block SOUND_BLOCK =
-            registerBlock("sound_block", new SoundBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL)));
+            registerBlock("sound_block", new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(ModSounds.SOUND_BLOCK_SOUNDS)));
 
     public static final Block TOMATO_CROP = Registry.register(Registries.BLOCK,
             new Identifier(TutorialMod.MODID, "tomato_crop"),

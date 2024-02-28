@@ -1,6 +1,7 @@
 {
   "block.tutorial.chargeable_block": "泵比充能方块",
   "block.tutorial.custom_block": "泵比方块",
+  "block.tutorial.dahlia": "泵比大力花",
   "block.tutorial.sound_block": "泵比声音块",
   "enchantment.tutorial.frost": "泵比冰冻",
   "item.tutorial.corn": "泵比玉米",
@@ -19,5 +20,10 @@
   "item.tutorial.tomato": "泵比番茄",
   "item.tutorial.tomato_seeds": "泵比番茄种子",
   "itemGroup.tutorial.test_group": "泵比世界",
-  "block.tutorial.dahlia": "泵比大力花"
+  "sounds.tutorial.metal_detector_found_ore": "Metal Detector Jingle",
+  "sounds.tutorial.sound_block_break": "Sound Block Break",
+  "sounds.tutorial.sound_block_fall": "Custom Material fall",
+  "sounds.tutorial.sound_block_hit": "Sound Block Hit",
+  "sounds.tutorial.sound_block_place": "Sound Block Place",
+  "sounds.tutorial.sound_block_step": "Custom Material step"
 }
