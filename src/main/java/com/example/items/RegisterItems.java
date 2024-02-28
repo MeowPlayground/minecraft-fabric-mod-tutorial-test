@@ -1,6 +1,7 @@
 package com.example.items;
 
 import com.example.TutorialMod;
+import com.example.items.custom.CustomArmorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -12,12 +13,12 @@ import net.minecraft.util.Identifier;
 public class RegisterItems {
 
     public static final Item CUSTOM_ITEM = registerItem("custom_item",
-            new CustomItem(new FabricItemSettings()));
+            new Item(new FabricItemSettings()));
     public static final Item TOMATO = registerItem("tomato",
             new Item(new FabricItemSettings().food(CustomFootComponents.TOMATO)));
     //custom armor
     public static final Item CUSTOM_MATERIAL_HELMET = registerItem("custom_material_helmet",
-            new ArmorItem(CustomArmorMaterial.CUSTOM_ITEM, ArmorItem.Type.HELMET, new Item.Settings()));
+            new CustomArmorItem(CustomArmorMaterial.CUSTOM_ITEM, ArmorItem.Type.HELMET, new Item.Settings()));
     public static final Item CUSTOM_MATERIAL_CHESTPLATE = registerItem("custom_material_chestplate",
             new ArmorItem(CustomArmorMaterial.CUSTOM_ITEM, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
     public static final Item CUSTOM_MATERIAL_LEGGINGS = registerItem("custom_material_leggings",
