@@ -1,6 +1,6 @@
 package com.example.items.custom;
 
-import com.example.items.CustomArmorMaterial;
+import com.example.items.materials.CustomArmorMaterial;
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -20,6 +20,10 @@ public class CustomArmorItem extends ArmorItem {
                     .put(CustomArmorMaterial.CUSTOM_ITEM, new StatusEffectInstance(StatusEffects.HASTE,
                             200, 0, false, false, true))
                     .build();
+
+    public CustomArmorItem(ArmorMaterial material, Type type, Settings settings) {
+        super(material, type, settings);
+    }
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
@@ -73,9 +77,5 @@ public class CustomArmorItem extends ArmorItem {
 
         return helmet.getMaterial() == armorMaterial && breastplate.getMaterial() == armorMaterial
                 && leggings.getMaterial() == armorMaterial && boots.getMaterial() == armorMaterial;
-    }
-
-    public CustomArmorItem(ArmorMaterial material, Type type, Settings settings) {
-        super(material, type, settings);
     }
 }

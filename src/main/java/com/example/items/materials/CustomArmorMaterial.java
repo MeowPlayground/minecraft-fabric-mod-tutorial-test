@@ -1,6 +1,7 @@
-package com.example.items;
+package com.example.items.materials;
 
 import com.example.TutorialMod;
+import com.example.items.ModItems;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -12,6 +13,7 @@ import java.util.function.Supplier;
 public enum CustomArmorMaterial implements ArmorMaterial {
     CUSTOM_ITEM("custom_armor", 25, new int[]{3, 8, 6, 3},
             19, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.CUSTOM_ITEM));
+    private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;
@@ -20,7 +22,6 @@ public enum CustomArmorMaterial implements ArmorMaterial {
     private final float toughness;
     private final float knockbackResistance;
     private final Supplier<Ingredient> repairIngredient;
-    private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
 
     CustomArmorMaterial(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
         this.name = name;

@@ -1,12 +1,13 @@
-package com.example.items;
+package com.example.items.materials;
 
+import com.example.items.ModItems;
 import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
 import java.util.function.Supplier;
 
-public enum CustomToolMaterials implements ToolMaterial {
+public enum CustomToolMaterial implements ToolMaterial {
     CUSTOM_ITEM(MiningLevels.IRON, 500, 4f, 3f, 15, () -> Ingredient.ofItems(ModItems.CUSTOM_ITEM));
 
     private final int miningLevel;
@@ -16,7 +17,7 @@ public enum CustomToolMaterials implements ToolMaterial {
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    CustomToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
+    CustomToolMaterial(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;

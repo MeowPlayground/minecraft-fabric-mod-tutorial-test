@@ -2,6 +2,8 @@ package com.example.blocks;
 
 import com.example.TutorialMod;
 import com.example.blocks.custom.ChargeableBlock;
+import com.example.blocks.custom.CornCropBlock;
+import com.example.blocks.custom.SoundBlock;
 import com.example.blocks.custom.TomatoCropBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -27,8 +29,15 @@ public class ModBlocks {
     public static final Block SOUND_BLOCK =
             registerBlock("sound_block", new SoundBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL)));
 
-    public static final Block TOMATO_CROP = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MODID,
-            "tomato_crop"), new TomatoCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+    public static final Block TOMATO_CROP = Registry.register(Registries.BLOCK,
+            new Identifier(TutorialMod.MODID, "tomato_crop"),
+            new TomatoCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT))
+    );
+
+    public static final Block CORN_CROP = Registry.register(Registries.BLOCK,
+            new Identifier(TutorialMod.MODID, "corn_crop"),
+            new CornCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT))
+    );
 
     public static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

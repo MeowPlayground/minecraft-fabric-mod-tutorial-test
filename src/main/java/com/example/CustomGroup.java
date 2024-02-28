@@ -30,6 +30,9 @@ public class CustomGroup {
                 entries.add(ModBlocks.CHARGEABLE_BLOCK);
                 entries.add(ModBlocks.SOUND_BLOCK);
                 entries.add(ModItems.TOMATO);
+                entries.add(ModItems.TOMATO_SEEDS);
+                entries.add(ModItems.CORN);
+                entries.add(ModItems.CORN_SEEDS);
             }))
             .build();
 

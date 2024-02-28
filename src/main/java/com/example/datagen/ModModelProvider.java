@@ -2,6 +2,7 @@ package com.example.datagen;
 
 import com.example.blocks.ModBlocks;
 import com.example.blocks.custom.ChargeableBlock;
+import com.example.blocks.custom.CornCropBlock;
 import com.example.blocks.custom.TomatoCropBlock;
 import com.example.items.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -25,12 +26,14 @@ public class ModModelProvider extends FabricModelProvider {
         registerChargeableBlock(blockStateModelGenerator);
 
         blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+        blockStateModelGenerator.registerCrop(ModBlocks.CORN_CROP, CornCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7, 8);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.CUSTOM_ITEM, Models.GENERATED);
         itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORN, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CUSTOM_MATERIAL_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CUSTOM_MATERIAL_PICKAXE, Models.HANDHELD);
