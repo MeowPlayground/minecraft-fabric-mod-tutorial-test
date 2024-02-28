@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "tutorial:custom_material_helmet",
-    "tutorial:custom_material_chestplate",
-    "tutorial:custom_material_leggings",
-    "tutorial:custom_material_boots"
-  ]
-}
