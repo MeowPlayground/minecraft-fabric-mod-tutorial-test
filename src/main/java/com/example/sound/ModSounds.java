@@ -25,7 +25,7 @@ public class ModSounds {
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));
     }
 
-    public static void registerSounds() {
+    public static void register() {
         TutorialMod.LOGGER.info("Registering Sounds for" + TutorialMod.MODID);
     }
 }

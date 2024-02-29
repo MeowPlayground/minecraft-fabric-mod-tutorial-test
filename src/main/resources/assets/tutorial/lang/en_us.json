@@ -27,5 +27,7 @@
   "tutorial.sound_block_place": "Sound Block Place",
   "tutorial.sound_block_hit": "Sound Block Hit",
   "tutorial.sound_block_fall": "Sound Block Fall",
-  "tutorial.sound_block_step": "Sound Block Step"
+  "tutorial.sound_block_step": "Sound Block Step",
+  "item.tutorial.porcupine_spawn_egg": "Porcupine Spawn egg",
+  "entity.tutorial.porcupine": "Porcupine"
 }

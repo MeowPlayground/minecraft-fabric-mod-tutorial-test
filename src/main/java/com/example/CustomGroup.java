@@ -35,6 +35,7 @@ public class CustomGroup {
                 entries.add(ModItems.CORN_SEEDS);
                 entries.add(ModBlocks.DAHLIA);
                 entries.add(ModItems.MUSIC_DISC_HNO);
+                entries.add(ModItems.PORCUPINE_SPAWN_EGG);
             }))
             .build();
 
