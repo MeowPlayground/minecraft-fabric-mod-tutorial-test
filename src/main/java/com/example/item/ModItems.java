@@ -2,6 +2,7 @@ package com.example.item;
 
 import com.example.TutorialMod;
 import com.example.block.ModBlocks;
+import com.example.entity.ModEntities;
 import com.example.item.custom.CustomArmorItem;
 import com.example.item.custom.CustomFootComponents;
 import com.example.item.materials.CustomArmorMaterial;
@@ -30,8 +31,11 @@ public class ModItems {
 
     public static final Item CORN = registerItem("corn",
             new Item(new FabricItemSettings().food(CustomFootComponents.CORN)));
-    //custom armor
 
+    public static final Item PORCUPINE_SPAWN_EGG = registerItem("porcupine_spawn_egg",
+            new SpawnEggItem(ModEntities.PORCUPINE, 0xa86518, 0x3b260f, new FabricItemSettings())
+    );
+    //custom armor
     public static final Item CUSTOM_MATERIAL_HELMET = registerItem("custom_material_helmet",
             new CustomArmorItem(CustomArmorMaterial.CUSTOM_ITEM, ArmorItem.Type.HELMET, new Item.Settings()));
     public static final Item CUSTOM_MATERIAL_CHESTPLATE = registerItem("custom_material_chestplate",

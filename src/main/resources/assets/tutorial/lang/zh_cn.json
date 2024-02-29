@@ -27,5 +27,7 @@
   "tutorial.sound_block_place": "泵比声音块 放置",
   "tutorial.sound_block_hit": "泵比声音块 击打",
   "tutorial.sound_block_fall": "泵比声音块 摔落",
-  "tutorial.sound_block_step": "泵比声音块 踩踏"
+  "tutorial.sound_block_step": "泵比声音块 踩踏",
+  "item.tutorial.porcupine_spawn_egg": "泵比猪蛋",
+  "entity.tutorial.porcupine": "泵比猪"
 }

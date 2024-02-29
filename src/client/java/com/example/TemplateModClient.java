@@ -1,8 +1,14 @@
 package com.example;
 
 import com.example.block.ModBlocks;
+import com.example.entity.ModEntities;
+import com.example.entity.client.ModModelLayers;
+import com.example.entity.client.PorcupineModel;
+import com.example.entity.client.PorcupineRenderer;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
 
 public class TemplateModClient implements ClientModInitializer {
@@ -14,5 +20,8 @@ public class TemplateModClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DAHLIA, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_DAHLIA, RenderLayer.getCutout());
+
+        EntityRendererRegistry.register(ModEntities.PORCUPINE, PorcupineRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PORCUPINE, PorcupineModel::getTexturedModelData);
     }
 }
