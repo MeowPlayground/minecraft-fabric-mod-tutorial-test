@@ -1,10 +1,10 @@
 package com.example.datagen;
 
-import com.example.blocks.ModBlocks;
-import com.example.blocks.custom.ChargeableBlock;
-import com.example.blocks.custom.CornCropBlock;
-import com.example.blocks.custom.TomatoCropBlock;
-import com.example.items.ModItems;
+import com.example.block.ModBlocks;
+import com.example.block.custom.ChargeableBlock;
+import com.example.block.custom.CornCropBlock;
+import com.example.block.custom.TomatoCropBlock;
+import com.example.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
@@ -27,6 +27,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5);
         blockStateModelGenerator.registerCrop(ModBlocks.CORN_CROP, CornCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7, 8);
+
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.DAHLIA, ModBlocks.POTTED_DAHLIA, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override
@@ -34,7 +36,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CUSTOM_ITEM, Models.GENERATED);
         itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED);
         itemModelGenerator.register(ModItems.CORN, Models.GENERATED);
-
+        itemModelGenerator.register(ModItems.MUSIC_DISC_HNO, Models.GENERATED);
+        
         itemModelGenerator.register(ModItems.CUSTOM_MATERIAL_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CUSTOM_MATERIAL_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CUSTOM_MATERIAL_SHOVEL, Models.HANDHELD);
@@ -45,6 +48,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.CUSTOM_MATERIAL_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.CUSTOM_MATERIAL_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.CUSTOM_MATERIAL_BOOTS);
+
+
     }
 
     private void registerChargeableBlock(BlockStateModelGenerator blockStateModelGenerator) {

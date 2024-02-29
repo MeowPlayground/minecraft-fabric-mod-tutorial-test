@@ -1,6 +1,6 @@
-package com.example.items.custom;
+package com.example.item.custom;
 
-import com.example.items.materials.CustomArmorMaterial;
+import com.example.item.materials.CustomArmorMaterial;
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;

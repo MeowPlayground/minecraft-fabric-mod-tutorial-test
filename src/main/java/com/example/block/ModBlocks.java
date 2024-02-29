@@ -1,15 +1,15 @@
-package com.example.blocks;
+package com.example.block;
 
 import com.example.TutorialMod;
-import com.example.blocks.custom.ChargeableBlock;
-import com.example.blocks.custom.CornCropBlock;
-import com.example.blocks.custom.SoundBlock;
-import com.example.blocks.custom.TomatoCropBlock;
+import com.example.block.custom.ChargeableBlock;
+import com.example.block.custom.CornCropBlock;
+import com.example.block.custom.SoundBlock;
+import com.example.block.custom.TomatoCropBlock;
+import com.example.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -27,7 +27,7 @@ public class ModBlocks {
             registerBlock("chargeable_block", new ChargeableBlock(FabricBlockSettings.copyOf(Blocks.STONE).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     public static final Block SOUND_BLOCK =
-            registerBlock("sound_block", new SoundBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL)));
+            registerBlock("sound_block", new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(ModSounds.SOUND_BLOCK_SOUNDS)));
 
     public static final Block TOMATO_CROP = Registry.register(Registries.BLOCK,
             new Identifier(TutorialMod.MODID, "tomato_crop"),
@@ -38,6 +38,15 @@ public class ModBlocks {
             new Identifier(TutorialMod.MODID, "corn_crop"),
             new CornCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT))
     );
+
+    public static final Block DAHLIA = registerBlock("dahlia",
+            new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 10,
+                    FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+
+    public static final Block POTTED_DAHLIA = Registry.register(Registries.BLOCK,
+            new Identifier(TutorialMod.MODID, "potted_dahlia"),
+            new FlowerPotBlock(DAHLIA, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
+
 
     public static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

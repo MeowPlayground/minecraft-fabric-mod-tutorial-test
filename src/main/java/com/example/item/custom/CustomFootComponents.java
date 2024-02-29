@@ -1,4 +1,4 @@
-package com.example.items.custom;
+package com.example.item.custom;
 
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;

@@ -18,5 +18,14 @@
   "item.tutorial.tomato": "Tomato",
   "item.tutorial.tomato_seeds": "Tomato Seeds",
   "item.tutorial.corn": "Corn",
-  "item.tutorial.corn_seeds": "Corn Seeds"
+  "item.tutorial.corn_seeds": "Corn Seeds",
+  "block.tutorial.dahlia": "DAHLIA",
+  "sounds.tutorial.metal_detector_found_ore": "Metal Detector Jingle",
+  "item.tutorial.music_disc_hno": "Hoshino-no-Otoshimono",
+  "item.tutorial.music_disc_hno.desc": "Hoshino-no-Otoshimono - AAAA",
+  "tutorial.sound_block_break": "Sound Block Break",
+  "tutorial.sound_block_place": "Sound Block Place",
+  "tutorial.sound_block_hit": "Sound Block Hit",
+  "tutorial.sound_block_fall": "Sound Block Fall",
+  "tutorial.sound_block_step": "Sound Block Step"
 }

@@ -1,6 +1,6 @@
-package com.example.items.materials;
+package com.example.item.materials;
 
-import com.example.items.ModItems;
+import com.example.item.ModItems;
 import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;

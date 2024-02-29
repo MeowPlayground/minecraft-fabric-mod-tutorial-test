@@ -1,9 +1,9 @@
 package com.example.datagen;
 
-import com.example.blocks.ModBlocks;
-import com.example.blocks.custom.CornCropBlock;
-import com.example.blocks.custom.TomatoCropBlock;
-import com.example.items.ModItems;
+import com.example.block.ModBlocks;
+import com.example.block.custom.CornCropBlock;
+import com.example.block.custom.TomatoCropBlock;
+import com.example.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
@@ -28,6 +28,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.CHARGEABLE_BLOCK);
         addDrop(ModBlocks.SOUND_BLOCK);
+        addDrop(ModBlocks.DAHLIA);
+        addPottedPlantDrops(ModBlocks.POTTED_DAHLIA);
+
         addDrop(ModBlocks.CUSTOM_BLOCK, copperOreLikeDrops(ModBlocks.CUSTOM_BLOCK, ModItems.CUSTOM_ITEM));
 
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition
