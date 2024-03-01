@@ -562,4 +562,5 @@ public class ModAnimations {
                                     Transformation.Interpolations.LINEAR),
                             new Keyframe(1f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR))).build();
+
 }

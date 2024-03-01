@@ -2,9 +2,7 @@ package com.example;
 
 import com.example.block.ModBlocks;
 import com.example.entity.ModEntities;
-import com.example.entity.client.ModModelLayers;
-import com.example.entity.client.PorcupineModel;
-import com.example.entity.client.PorcupineRenderer;
+import com.example.entity.client.*;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
@@ -23,5 +21,8 @@ public class TemplateModClient implements ClientModInitializer {
 
         EntityRendererRegistry.register(ModEntities.PORCUPINE, PorcupineRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PORCUPINE, PorcupineModel::getTexturedModelData);
+
+        EntityRendererRegistry.register(ModEntities.MOMODOGGY, MomodoggyRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.MOMODOGGY, MomodoggyModel::getTexturedModelData);
     }
 }
