@@ -4,6 +4,7 @@
   "block.tutorial.dahlia": "泵比大力花",
   "block.tutorial.sound_block": "泵比声音块",
   "enchantment.tutorial.frost": "泵比冰冻",
+  "entity.tutorial.porcupine": "泵比猪",
   "item.tutorial.corn": "泵比玉米",
   "item.tutorial.corn_seeds": "泵比玉米种子",
   "item.tutorial.custom_item": "泵比",
@@ -28,6 +29,5 @@
   "tutorial.sound_block_hit": "泵比声音块 击打",
   "tutorial.sound_block_fall": "泵比声音块 摔落",
   "tutorial.sound_block_step": "泵比声音块 踩踏",
-  "item.tutorial.porcupine_spawn_egg": "泵比猪蛋",
-  "entity.tutorial.porcupine": "泵比猪"
+  "item.tutorial.porcupine_spawn_egg": "泵比猪蛋"
 }

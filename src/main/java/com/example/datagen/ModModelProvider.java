@@ -45,6 +45,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PORCUPINE_SPAWN_EGG, new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
         itemModelGenerator.register(ModItems.MOMODOGGY_SPAWN_EGG, new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
 
+        itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CUSTOM_MATERIAL_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CUSTOM_MATERIAL_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CUSTOM_MATERIAL_SHOVEL, Models.HANDHELD);

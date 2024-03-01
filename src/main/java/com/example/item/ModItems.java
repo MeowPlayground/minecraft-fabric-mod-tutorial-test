@@ -5,6 +5,7 @@ import com.example.block.ModBlocks;
 import com.example.entity.ModEntities;
 import com.example.item.custom.CustomArmorItem;
 import com.example.item.custom.CustomFootComponents;
+import com.example.item.custom.MetalDetectorItem;
 import com.example.item.materials.CustomArmorMaterial;
 import com.example.item.materials.CustomToolMaterial;
 import com.example.sound.ModSounds;
@@ -38,6 +39,9 @@ public class ModItems {
 
     public static final Item MOMODOGGY_SPAWN_EGG = registerItem("momodoggy_spawn_egg",
             new SpawnEggItem(ModEntities.MOMODOGGY, 0xFFA500, 0xFFF8DC, new Item.Settings()));
+
+    public static final Item METAL_DETECTOR = registerItem("metal_detector",
+            new MetalDetectorItem(new FabricItemSettings().maxCount(1).maxDamage(100)));
     //custom armor
     public static final Item CUSTOM_MATERIAL_HELMET = registerItem("custom_material_helmet",
             new CustomArmorItem(CustomArmorMaterial.CUSTOM_ITEM, ArmorItem.Type.HELMET, new Item.Settings()));
