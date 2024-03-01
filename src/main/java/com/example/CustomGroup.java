@@ -36,6 +36,7 @@ public class CustomGroup {
                 entries.add(ModBlocks.DAHLIA);
                 entries.add(ModItems.MUSIC_DISC_HNO);
                 entries.add(ModItems.PORCUPINE_SPAWN_EGG);
+                entries.add(ModItems.METAL_DETECTOR);
             }))
             .build();
 
